@@ -1,7 +1,7 @@
 // TODOの状態を管理するカスタムフック
 import { useState, useEffect } from "react"
 import { ulid } from "ulid"
-import * as todoData from "../apis/todos.js"
+import * as todoData from "../apis/todos"
 
 
 export const useTodo = () => {
