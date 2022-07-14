@@ -22,7 +22,7 @@ export const useTodo = () => {
             const newTodoList = todoList.map((item) => 
                 item.id !== updateTodo.id ? item : updateTodo
             )
-            setTodoList(nweTodoList)
+            setTodoList(newTodoList)
         })
     }
 
@@ -30,7 +30,7 @@ export const useTodo = () => {
         const newTodoItem = {
             content: todoContent,
             id: ulid(),
-            done: falise
+            done: false
         }
         return todoData.addTodoData(newTodoItem).then((addTodo) => {
             setTodoList([addTodo, ...todoList])
