@@ -16,7 +16,7 @@ function App() {
   const inputEl = useRef(null)
   
   const handleAddTodoListItem = () => {
-    if(inputEl.current.value === "") return
+    if(inputEl.current.value === "") return;
     addTodoListItem(inputEl.current.value)
     inputEl.current.value = ""
   }
@@ -32,7 +32,7 @@ function App() {
       <TodoAdd 
         buttonText="+ TODOを追加"
         inputEl={inputEl} 
-        handleAddTodoItem={handleAddTodoListItem}
+        handleAddTodoListItem={handleAddTodoListItem}
       />
       <TodoList 
         todoList={inCompletedList} 
