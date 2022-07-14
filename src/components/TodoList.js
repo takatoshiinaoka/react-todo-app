@@ -1,7 +1,6 @@
-// TODOをリスト化するコンポーネント
-// TodoListコンポーネント
 import { TodoTitle } from "./TodoTitle"
 import { TodoItem } from "./TodoItem"
+
 export const TodoList = ({ 
     todoList, 
     toggleTodoListItemStatus, 

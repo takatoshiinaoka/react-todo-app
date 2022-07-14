@@ -21,8 +21,6 @@ function App() {
     inputEl.current.value = ""
   }
 
-  // console.log("TODOリスト：", todoList)
-
   const inCompletedList = todoList.filter((todo) => !todo.done)
   const completedList = todoList.filter((todo) => todo.done)
 

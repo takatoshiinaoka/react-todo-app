@@ -1,5 +1,3 @@
-// TODO単体用のコンポーネント
-// TodoItemコンポーネント
 export const TodoItem = ({ todo, toggleTodoListItemStatus, deleteTodoListItem }) => {
     const handleToggleTodoListItemStatus = () => toggleTodoListItemStatus(todo.id, todo.done)
     const handleDeleteTodoListItem = () => deleteTodoListItem(todo.id)
