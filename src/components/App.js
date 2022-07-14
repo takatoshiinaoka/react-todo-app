@@ -16,7 +16,7 @@ function App() {
   const inputEl = useRef(null)
   
   const handleAddTodoListItem = () => {
-    if(inputEl.current.value === "") return;
+    if(inputEl.current.value === "") return
     addTodoListItem(inputEl.current.value)
     inputEl.current.value = ""
   }
