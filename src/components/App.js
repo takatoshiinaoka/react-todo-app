@@ -1,7 +1,4 @@
-import React, { useState, useEffect } from "react"
-import axios from "axios" // モックサーバーとの通信のため axios を import
-
-const todoDataUrl = "http://localhost:3100/todos"
+import { useTodo } from "../hooks/useTodo"
 
 const TodoTitile = ({ titile, as }) => {
   if(as === "h1") return <h1>{titile}</h1>
@@ -30,23 +27,12 @@ const TodoList = ({ todoList }) => {
 }
 
 function App() {
-  const [todoList, setTodoList] = useState([])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await axios.get(todoDataUrl)
-      setTodoList(response.data)
-    }
-    fetchData();
-  }, [])
+  const { todoList } = useTodo()
 
   console.log("TODOリスト：", todoList)
 
   const inCompletedList = todoList.filter((todo) => !todo.done)
-  // console.log("未完了TODOリスト：",inCompletedList)
-
   const completedList = todoList.filter((todo) => todo.done)
-  // console.log("完了TODOリスト：",completedList)
 
   return (
     <>
