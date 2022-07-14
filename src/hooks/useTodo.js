@@ -42,6 +42,7 @@ export const useTodo = () => {
             const newTodoList = todoList.filter(
                 (item) => item.id !== deleteListItemId
             )
+            setTodoList(newTodoList)
         })
     }
 
