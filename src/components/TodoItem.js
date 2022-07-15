@@ -19,14 +19,14 @@ export const TodoItem = ({ todo, toggleTodoListItemStatus, deleteTodoListItem })
       >
         <Text mb="6">{todo.content}</Text>
         <Flex align="center" justify="flex-end">
-          <button 
+          <Button 
             colorScheme={setColorScheme}
             variant="outline"
             size="sm"
             onClick={handleToggleTodoListItemStatus}
           >
             {label}
-          </button>
+          </Button>
 
           <IconButton 
             icon={<DeleteIcon/>}

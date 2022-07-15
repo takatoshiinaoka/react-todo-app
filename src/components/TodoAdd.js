@@ -16,14 +16,14 @@ export const TodoAdd = ({
           borderColor="gray.400"
           ref={inputEl} 
         />
-        <button 
+        <Button 
           onClick={handleAddTodoListItem}
           colorScheme="blue"
           leftIcon={leftIcon}
           mt="8"
         >
           {buttonText}
-        </button>
+        </Button>
       </>
     )
   }
