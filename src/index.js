@@ -1,5 +1,5 @@
 import React, { StrictMode } from 'react'
-import { ReactDOM, createRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 import App from './components/App'
 import { ChakraProvider } from "@chakra-ui/react"
 import theme from "./theme/theme"
